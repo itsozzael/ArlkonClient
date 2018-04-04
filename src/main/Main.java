@@ -7,7 +7,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
+import java.awt.*;
 import java.rmi.Naming;
 
 public class Main extends Application {
@@ -16,13 +18,20 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../views/main.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+        double width = screenSize.getWidth() * 0.75;
+        double height = screenSize.getHeight() * 0.7;
+
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
+        primaryStage.setScene(new Scene(root, width, height));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
-        connectToServer();
+        //connectToServer();
         launch(args);
     }
 

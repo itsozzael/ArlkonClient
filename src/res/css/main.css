@@ -1,0 +1,21 @@
+#main_window {
+	-fx-background-color: #152123;
+}
+
+#right_container_signin {
+	-fx-background-color: #ecebe4;
+}
+
+#signin_btn {
+	-fx-background-color: #009e4e;
+}
+
+#signin_btn:hover {
+	-fx-background-color: #008742;
+	-fx-cursor: hand;
+}
+
+.signin_links {
+	-fx-cursor: hand;
+}
+
