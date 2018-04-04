@@ -10,12 +10,25 @@
 	-fx-background-color: #009e4e;
 }
 
+#signup_btn {
+	-fx-background-color: #009e4e;
+}
+
 #signin_btn:hover {
+	-fx-background-color: #008742;
+	-fx-cursor: hand;
+}
+
+#signup_btn:hover {
 	-fx-background-color: #008742;
 	-fx-cursor: hand;
 }
 
 .signin_links {
 	-fx-cursor: hand;
+}
+
+#signup_window {
+	-fx-background-color: #ecebe4;
 }
 
